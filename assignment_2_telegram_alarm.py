@@ -16,7 +16,7 @@ async def send_time():
 
     # 시간 보내는 함수
     async def job():
-        # 현재시간과 알림 회피 시간 설정
+        # 현재 시간과 알림 회피 시간 설정
         now = datetime.datetime.now()
         if now.hour >= 23 or now.hour <= 6:
             return
